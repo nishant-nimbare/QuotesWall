@@ -1,0 +1,9 @@
+rootProject.name = 'QuotesWallpaper'
+include ':react-native-background-job'
+project(':react-native-background-job').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-background-job/android')
+include ':@react-native-community_image-editor'
+project(':@react-native-community_image-editor').projectDir = new File(rootProject.projectDir, '../node_modules/@react-native-community/image-editor/android')
+include ':rnwallpaper'
+project(':rnwallpaper').projectDir = new File(rootProject.projectDir, '../node_modules/rnwallpaper/android')
+apply from: file("../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesSettingsGradle(settings)
+include ':app'

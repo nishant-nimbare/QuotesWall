@@ -1,0 +1,3 @@
+        <TouchableOpacity onPress={this.combine.bind(this)} style={styles.button}>
+          <View ><Text>combine</Text></View>
+        </TouchableOpacity>
