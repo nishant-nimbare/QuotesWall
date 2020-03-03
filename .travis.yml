@@ -42,6 +42,7 @@ android:
   - android-$ANDROID_API_LEVEL
   - android-$EMULATOR_API_LEVEL
   - android-23
+  - android-27
   - extra-google-google_play_services
   - extra-google-m2repository
   - extra-android-m2repository
