@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, Image, Button, Alert, Platform, Dimensions, StyleSheet, TouchableOpacity, AsyncStorage, Switch } from 'react-native';
+import { View, Text, Image, Button, Alert, Platform, Dimensions, StyleSheet, TouchableOpacity, AsyncStorage, Switch, TextInput } from 'react-native';
 import ImageMarker from 'react-native-image-marker';
 import Marker from 'react-native-image-marker';
 import Wallpaper from 'rnwallpaper';
@@ -166,7 +166,7 @@ class test extends Component {
 
         src: this.state.photo,
         text: this.state.quote,
-        color: '#ffffff',
+        color: '#101010',
         fontName: 'Arial-BoldItalicMT',
         fontSize: fs,
         position: 'center', 
@@ -256,7 +256,13 @@ class test extends Component {
           <Switch style={{flex:1}} value={this.state.switchVal} onValueChange={this.toggleScheduled.bind(this)}/>
         </View>
         <View style={styles.quote}>
-        <Text style={{color:theme.Brownish, fontWeight:'bold', fontStyle:'italic'}}>{this.state.quote}</Text>
+          <TextInput 
+            value={this.state.quote}        
+            onChangeText={ (t)=> this.setState({quote:t})}
+            style={{color:theme.Brownish, fontWeight:'bold', fontStyle:'italic', borderColor:theme.Brownish,
+            borderWidth: 2}}
+            multiline={true}
+          />         
         </View>
         <View style={styles.image}>
         <Image
@@ -323,7 +329,6 @@ const styles = StyleSheet.create({
     alignContent:'center',
     justifyContent:'center',
     textAlign:'center',
-    
     },
 
   image:{

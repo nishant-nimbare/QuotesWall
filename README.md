@@ -9,6 +9,12 @@ Set wallpapers of random images with random quotes
 ### Random images from reddits
 
 
+| ![app screen](ss/app.jpeg) |  ![home screen](ss/wallpaper.jpeg) |
+| :------------------------: |  :-------------------------------: |
+| app screen |  wallpaper |
+
+
+
 ### Installation
 ```
 react-native run-android
