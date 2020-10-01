@@ -14,7 +14,7 @@
     "cheerio-without-node-native": "^0.20.2",
     "events": "^3.0.0",
     "react": "16.9.0",
-    "react-native": "0.61.1",
+    "react-native": "^0.63.2",
     "react-native-background-job": "^2.3.1",
     "react-native-image-marker": "^0.5.2",
     "react-transform-hmr": "^1.0.4",
